@@ -4,6 +4,7 @@
  1. You need to download source code and open quickly with visual studio code.
  2. Ensure you install node and npm before.
  3. Type command in terminal visual studio code: npm install
+ 4. start server: node server.js
 # Table of Contents
 
 - [Project Title](#project-title)
