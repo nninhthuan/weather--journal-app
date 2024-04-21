@@ -2,7 +2,7 @@
 const express = require('express');
 
 //Save data
-const projectData = {};
+const projectData = [];
 
 //Import package install before
 const bodyParser = require('body-parser');
@@ -27,12 +27,10 @@ function startServer () {
 }
 
 app.get('/all', function (req, res) {
-  console.log(res)
   res.send(projectData);
 })
 
 app.post('/add', function (req, res) {
-  console.log(res)
   projectData.push(req.body)
-  res.send('hello world');
+  // res.send('POST received');
 })
