@@ -2,8 +2,8 @@
 const express = require('express');
 
 //Save data
-const projectData = [];
-
+let projectData = {};
+const data = [];
 //Import package install before
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -31,6 +31,7 @@ app.get('/all', function (req, res) {
 })
 
 app.post('/add', function (req, res) {
-  projectData.push(req.body)
+  data.push(req.body);
+  projectData = { ...data }
   // res.send('POST received');
 })
